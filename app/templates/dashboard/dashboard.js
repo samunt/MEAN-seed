@@ -42,31 +42,6 @@
         }
 
 
-
-        function getCourthouses(location) {
-            c.log(location);
-            ServerRequest.getCourthouses(location)
-                .then(function(resp) {
-                    c.log('resp', resp);
-                    $scope.courthouses = resp.courthouses;
-                    $scope.categories = vm.getCategories(resp.courthouses);
-                })
-                .catch(function(err) {
-                    c.log(err);
-                });
-        }
-
-        function getCategories(courthouses) {
-            var returnCategories = [];
-            angular.forEach(courthouses, function(value, key) {
-                if (returnCategories.indexOf(value.category) < 0) {
-                  returnCategories.push(value.category);
-                }
-            });
-            c.log(returnCategories);
-            return returnCategories;
-        }
-
         function updateLocation(user, location) {
             var params = { emailAddress : user.emailAddress, lat : location.lat, lon : location.lon, userId : user._id, deviceToken : "" };
 
