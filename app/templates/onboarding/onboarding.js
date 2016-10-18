@@ -32,7 +32,7 @@
                         if (resp.success === 1) {
                             $localStorage.user = resp.user;
                             console.log('successfully created user')
-                            $state.go('dashboard');
+                            $state.go('dashboard.home');
                         } else {
                             console.log('account was not created successfully')
                         }
