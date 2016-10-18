@@ -1,0 +1,21 @@
+#onboardtitle {
+  position: relative;
+  margin-left: 25%;
+  margin-right: auto;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+#onboardbox {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 375px;
+  max-height: 667px;
+  border: 2px solid black;
+  padding: 15px 15px 15px 15px;
+}
+
+#internalbox {
+  max-width: 350px;
+}

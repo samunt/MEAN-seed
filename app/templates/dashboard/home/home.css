@@ -1,0 +1,22 @@
+/*media query for cards*/
+@media screen and (max-width: 980px) {
+
+    #cardleft {
+
+    }
+
+    #cardcenter {
+      display: none;
+    }
+
+    #cardright {
+      display: none;
+    }
+
+}
+
+
+#navbar {
+  width: 250px;
+  height: 600px;
+}

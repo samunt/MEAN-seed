@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app='scriveApp' lang="en">
+<!--[if lte IE 10]>
+You are using an UNSUPPORTED BROWSER, please consider updating
+<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1, user-scalable=no">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./app/styles/styles.css"/> -->
+  <link href="./app/templates/login/login.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/./app/templates/onboarding/onboarding.css"/>
+  <!-- <link rel="stylesheet" href="/./app/templates/home/home.css"/> -->
+  <link rel="stylesheet" href="/./app/templates/dashboard/dashboard.css"/>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.5/ui-bootstrap-tpls.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <!--//////////////////////////////////////////////////////////////////////////////////////-->
+  <script src="./app/app.js"></script>
+  <script src="./app/CustomServices/serverRequest.service.js"></script>
+  <script type="text/javascript" src="./app/templates/login/login.js"></script>
+  <script type="text/javascript" src="./app/templates/onboarding/onboarding.js"></script>
+  <script type="text/javascript" src="./app/templates/dashboard/home/home.js"></script>
+  <script type="text/javascript" src="./app/templates/dashboard/dashboard.js"></script>
+  <script type="text/javascript" src="./app/templates/dashboard/account/account.js"></script>
+  <script type="text/javascript" src="./app/templates/dashboard/openrequest/openrequest.js"></script>
+  <script src="./bower_components/ng-file-upload/ng-file-upload-shim.js"></script> <!-- for no html5 browsers support -->
+  <script src="./bower_components/ng-file-upload/ng-file-upload.js"></script>
+  <!-- <script src="./bower_components/angular-local-storage/angular-local-storage.js"></script> -->
+  <!-- <script src="./index.js"></script> -->
+
+</head>
+
+<body ng-controller="AppCtrl">
+  <ui-view></ui-view>
+</body>
+
+</html>

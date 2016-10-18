@@ -1,0 +1,61 @@
+<section>
+  <div class="masterbottom">
+    <div class="section"></div>
+    <main>
+      <center>
+        <div class="section"></div>
+
+        <h5 class="indigo-text">Please complete signup</h5>
+        <div class="section"></div>
+
+        <div class="container" >
+          <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+            <form class="col s12" ng-submit="vm.submitForm()" name="vm.upload_form" enctype="multipart/form-data">
+              <img style="width:100px;" ngf-src="vm.file || vm.user.pictureUrl"/>
+
+              <div class="file-field input-field">
+                <div class="btn indigo">
+                  <span>Profile Image</span>
+                  <input type="file"
+                  ngf-select
+                  ng-model="vm.file"
+                  name="file"
+                  ngf-pattern="'image/*'"
+                  accept="image/*"
+                  ngf-max-size="20MB" />
+                  <i ng-show="vm.upload_form.file.$error.required">*required</i><br>
+                  <i ng-show="vm.upload_form.file.$error.maxSize">File too large
+                    {{up.file.size / 1000000|number:1}}MB: max 20M</i>
+                    <p>{{vm.progress}}</p>
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+                <!-- <div class='row'>
+                  <div class='col s12'>
+                  </div>
+                </div> -->
+                <div class='row'>
+                  <div class='input-field col s12'>
+                    <input class='validate' type='text' name='emailAddress'  ng-model="vm.signUpInfo.emailAddress" ng-required="true"/>
+                    <label for='lastName'>Please re-enter your email</label>
+                  </div>
+                </div>
+
+                <br />
+                <center>
+                  <div class='row'>
+                    <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Complete Sign Up</button>
+                  </div>
+                </center>
+                <p style="color: #ec6386">{{vm.loginError}}</p>
+              </form>
+            </div>
+          </div>
+          <a href="#!" ng-click="signup = false">Sign in with existing account</a>
+        </center>
+      </main>
+    </div>
+  </section>

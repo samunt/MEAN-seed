@@ -1,0 +1,62 @@
+<div class="metawrapper" ng-controller="AccountCtrl">
+  <div class="container">
+    <h4 style="font-family: roboto; font-weight: 200;">Edit Account Details</h4><br><br>
+
+    <div class="row">
+      <form class="col s12">
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate" value="{{users[0].firstName}}">
+            <label for="first_name">First Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" value="{{users[0].lastName}}">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="email" type="text" class="validate" value="{{users[0].emailAddress}}">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="phone" type="text" class="validate" value="{{users[0].phoneNumber}}">
+            <label for="phone">Phone</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="password" type="password" class="validate">
+            <label for="password">Change Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="switch">
+            <label style="position: relative; left: 10px;">Account Status</label><br>
+            <label>
+              Off
+              <input type="checkbox" checked>
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <select>
+              <option value="1">Laywer</option>
+              <option value="2">Scriber</option>
+            </select>
+            <label>Account Type</label>
+          </div>
+        </div>
+        <input type="submit" name="name" value="Update Account" class="waves-effect waves-light btn">
+      </form>
+    </div>
+  </div>
+</div>
